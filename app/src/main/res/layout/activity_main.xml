@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bbim1043.databaseviewer.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/string_layout_drawable">
+
+        <TextView
+            android:id="@+id/selectTableText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.495"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="Select Table"
+            android:textSize="20sp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.005"
+            android:background="#D3D3D3"
+            />
+
+        <Spinner
+            android:id="@+id/tableSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/string_layout_drawable">
+
+        <TextView
+            android:id="@+id/recordText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.495"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="No. of Records::"
+            android:textSize="20sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.005"
+            android:background="#D3D3D3"
+            />
+
+        <TextView
+            android:id="@+id/countRecordText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+
+            android:text="Not Specified"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+       >
+
+        <TableLayout
+            android:id="@+id/tableLayoutFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:showDividers="middle"
+            android:divider="@drawable/table_divider"
+            android:background="#1e88e5"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:showDividers="middle"
+                    android:divider="@drawable/table_divider"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    />
+            </HorizontalScrollView>
+        </ScrollView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Previous"
+            android:id="@+id/previousButton"
+            style="@style/Button"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Next"
+            android:id="@+id/nextButton"
+            style="@style/Button"/>
+    </LinearLayout>
+
+</LinearLayout>

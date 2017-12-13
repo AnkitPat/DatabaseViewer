@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DatabaseViewer</string>
+    <string name="title_activity_select_database">SelectDatabase</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialogHeader">Edit Dialog</string>
+</resources>
